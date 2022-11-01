@@ -5,6 +5,8 @@ const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const findOrCreate = require("mongoose-findorcreate");
 const ejs = require("ejs");
+require('dotenv').config()
+console.log(process.env.DATABASE)
 
 const app = express();
 app.set("view engine", "ejs");
