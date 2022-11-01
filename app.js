@@ -23,7 +23,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 mongoose
-  .connect(process.env.DATABASE, {
+  .connect(`${process.env.DATABASE}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
