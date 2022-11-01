@@ -94,7 +94,7 @@ app.post("/login", function (req, res) {
 const userSchema = new mongoose.Schema({
   username: String,
   fullName: String,
-  password: String
+  // password: String
 });
 // userSchema.plugin(passportLocalMongoose);
 userSchema.plugin(passportLocalMongoose);
@@ -117,7 +117,7 @@ app.post("/register", function(req, res) {
     const user = new User({
       username: req.body.username,
       fullName: req.body.fullName,
-      password: req.body.password
+      // password: req.body.password
     });
 
     User.register(user, req.body.password, function(err, user){
