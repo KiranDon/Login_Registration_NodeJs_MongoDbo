@@ -133,6 +133,6 @@ app.post("/register", function(req, res) {
 }
 );
 
-app.listen(4444, ()=>{
+app.listen(process.env.PORT || 4444, ()=>{
     console.log("Server started at http://localhost:4444");
 });
